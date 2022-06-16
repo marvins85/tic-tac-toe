@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+<!-- Play again ? pop-up -->
+<div class="playAgain">
+    <form>
+        <button class="butt" onClick="window.location.reload();">Play Again ?</button>
+    </form>
+</div>
+
+<!-- pop-up html -->
+<div class="form-popup" id="myForm">
+    <form class="form-container">
+        <h1>Enter Names</h1>
+    
+        <label for="player1"><b>Player 1</b></label>
+        <input id="player1" type="text" placeholder="Enter Name" name="player1">
+    
+        <label for="Player2"><b>Player 2</b></label>
+        <input id="player2" type="text" placeholder="Enter Name" name="Player2">
+    
+        <button class="btn" onclick="startGame(event)">Start Game</button>
+    </form>
+    </div>
+
+<!-- Names html -->
+<div class="names">
+<label for="player1"><b>Player 1</b></label>
+    <input id="play1" type="text" placeholder="Enter Name" name="player1">
+
+    <label for="Player2"><b>Player 2</b></label>
+    <input id="play2" type="text" placeholder="Enter Name" name="Player2">
+</div>
+<!-- Grid html -->
+    <div class="wrapper">
+        <div>
+            <p class="display">Player One's Turn</p>
+        </div>
+    <div class="grid">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box four"></div>
+        <div class="box five"></div>
+        <div class="box six"></div>
+        <div class="box seven"></div>
+        <div class="box eight"></div>  
+        <div class="box nine"></div> 
+    </div>
+        <div>
+            <button class="reset" onClick="window.location.reload();">Restart</button>
+        </div>
+        </div>
+  
+    <script src="sandbox.js"></script>
+</body>
+</html>
